@@ -35,13 +35,16 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               Container(
                 width: double.infinity,
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.vertical(bottom: Radius.circular(30))),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius:
+                        BorderRadius.vertical(bottom: Radius.circular(30))),
                 padding: EdgeInsets.all(20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Find Best Places in',
+                      'Find Cool Places in',
                       style: TextStyle(color: Colors.black87, fontSize: 25),
                     ),
                     SizedBox(
@@ -49,14 +52,19 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text(
                       'JHAPA',
-                      style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 20,
                     ),
                     Container(
                       padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(color: Color.fromRGBO(244, 243, 243, 1), borderRadius: BorderRadius.circular(15)),
+                      decoration: BoxDecoration(
+                          color: Color.fromRGBO(244, 243, 243, 1),
+                          borderRadius: BorderRadius.circular(15)),
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none,
@@ -64,8 +72,9 @@ class _HomePageState extends State<HomePage> {
                               Icons.search,
                               color: Colors.black87,
                             ),
-                            hintText: "Search the places of Jhapa",
-                            hintStyle: TextStyle(color: Colors.grey, fontSize: 15)),
+                            hintText: "Search  places of Jhapa",
+                            hintStyle:
+                                TextStyle(color: Colors.grey, fontSize: 15)),
                       ),
                     ),
                     SizedBox(
@@ -84,7 +93,8 @@ class _HomePageState extends State<HomePage> {
                   children: <Widget>[
                     Text(
                       'Search Results',
-                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 15,
@@ -108,18 +118,23 @@ class _HomePageState extends State<HomePage> {
                       height: 150,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(fit: BoxFit.cover, image: AssetImage('assets/images/three.jpg')),
+                        image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage('assets/images/three.jpg')),
                       ),
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          gradient: LinearGradient(begin: Alignment.bottomRight, stops: [
-                            0.3,
-                            0.9
-                          ], colors: [
-                            Colors.black.withOpacity(.8),
-                            Colors.black.withOpacity(.2)
-                          ]),
+                          gradient: LinearGradient(
+                              begin: Alignment.bottomRight,
+                              stops: [
+                                0.3,
+                                0.9
+                              ],
+                              colors: [
+                                Colors.black.withOpacity(.8),
+                                Colors.black.withOpacity(.2)
+                              ]),
                         ),
                         child: Align(
                           alignment: Alignment.bottomLeft,
@@ -127,7 +142,8 @@ class _HomePageState extends State<HomePage> {
                             padding: const EdgeInsets.all(15.0),
                             child: Text(
                               'Most Visited',
-                              style: TextStyle(color: Colors.white, fontSize: 20),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 20),
                             ),
                           ),
                         ),
